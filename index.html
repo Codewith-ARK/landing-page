@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i data-lucide="menu"></i>
+
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Hotel</a></li>
+            <li><a>Places</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl"><i data-lucide="shell"></i>Trip</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Hotel</a></li>
+          <li><a>Places</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-pink-300 text-white">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="lg:h-screen ps-16">
+      <div id="wrapper" class="absolute h-full flex items-center w-[45%]">
+        <div class="h-fit relative bg-white text-black rounded-xl p-16 flex flex-col gap-4 *:opacity-100">
+          <div id="line" class="rounded-lg absolute left-8 w-1 h-[70%] bg-pink-300"></div>
+          <h1 class="text-7xl font-bold">Explore the World Now</h1>
+          <p class="capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit dolore obcaecati temporibus ipsa!</p>
+          <span class="flex gap-6 items-center">
+            <a class="font-bold underline" href="#">Explore</a>
+            <span class="flex gap-3">
+              <button class="btn btn-circle bg-pink-300 text-black border-none *:opacity-100"><i
+                  data-lucide="play"></i></button>
+              <p class="w-24">Watch the intro video</p>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="h-full flex justify-end">
+        <img class="h-full w-3/4 object-fill rounded-tl-3xl" src="assets/ocean.jpg" alt="person surfing">
+      </div>
+
+    </section>
+
+    <section id="places" class="px-24 py-24">
+      <div class="flex justify-between">
+        <h2 class="text-4xl font-bold">Places for your next travel</h2>
+        <div class="flex items-center justify-center gap-3">
+          <button class="btn btn-circle btn-outline"><i data-lucide="chevron-left"></i></button>
+          <button class="btn btn-circle btn-neutral"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div id="cards-container" class="mt-8 flex gap-4 overflow-clip *:flex-shrink-0">
+
+        <div class="group relative w-80 aspect-[3/4] overflow-clip hover:rounded-lg transition-all duration-700">
+          <img class="w-full h-full group-hover:scale-110 transition-all ease-in-out duration-700" src="assets/karachi.jpg" alt="">
+          <div class="absolute bottom-0 w-full px-4 py-8 bg-gradient-to-t from-black to-transparent text-white">
+            <h4 class="font-medium text-2xl">Karachi</h4>
+            <p class="text-sm">Sindh, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="group relative w-80 aspect-[3/4] overflow-clip hover:rounded-lg transition-all duration-700">
+          <img class="w-full h-full group-hover:scale-110 transition-all ease-in-out duration-700" src="assets/lahore.jpg" alt="">
+          <div class="absolute bottom-0 w-full px-4 py-8 bg-gradient-to-t from-black to-transparent text-white">
+            <h4 class="font-medium text-2xl">Lahore</h4>
+            <p class="text-sm">Punjab, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="group relative w-80 aspect-[3/4] overflow-clip hover:rounded-lg transition-all duration-700">
+          <img class="w-full h-full group-hover:scale-110 transition-all ease-in-out duration-700" src="assets/kashmir.jpg" alt="">
+          <div class="absolute bottom-0 w-full px-4 py-8 bg-gradient-to-t from-black to-transparent text-white">
+            <h4 class="font-medium text-2xl">Kashmir</h4>
+            <p class="text-sm">Pakistan</p>
+          </div>
+        </div>
+
+        <div class="group relative w-80 aspect-[3/4] overflow-clip hover:rounded-lg transition-all duration-700">
+          <img class="w-full h-full group-hover:scale-110 transition-all ease-in-out duration-700" src="assets/hyderabad.jpg" alt="">
+          <div class="absolute bottom-0 w-full px-4 py-8 bg-gradient-to-t from-black to-transparent text-white">
+            <h4 class="font-medium text-2xl">Hyderabad</h4>
+            <p class="text-sm">Sindh, Pakistan</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="features" class="p-24 flex justify-center gap-8 text-center">
+      <div class="">
+        <i class="text-pink-300 block h-fit w-8 pb-6 mx-auto" data-lucide="luggage"></i>
+        <h4 class="font-bold text-lg">Travel Expert</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam id quod veritatis.</p>
+      </div>
+
+      <div class="">
+        <i class="text-pink-300 block h-fit w-8 pb-6 mx-auto" data-lucide="album"></i>
+        <h4 class="font-bold text-lg">Booking Expert</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam id quod veritatis.</p>
+      </div>
+
+      <div class="">
+        <i class="text-pink-300 block h-fit w-8 pb-6 mx-auto" data-lucide="badge-percent"></i>
+        <h4 class="font-bold text-lg">Best Discounts</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam id quod veritatis.</p>
+      </div>
+
+    </section>
+
+    <section id="about" class=" ps-16">
+      <div id="about-wrapper" class="absolute h-full flex items-center w-[45%]">
+        <div class="h-fit relative bg-white text-black rounded-xl p-16 flex flex-col gap-4 *:opacity-100">
+          <h2 class="text-4xl font-bold">Best Travel Agency since 2014</h2>
+          <p class="capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit dolore obcaecati temporibus ipsa!</p>
+          <span class="flex gap-6 items-center">
+            <a class="font-bold underline" href="#">About Us</a>
+            <span class="flex gap-3">
+              <button class="btn btn-neutral text-white border-none *:opacity-100"><i data-lucide="move-right"></i></button>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="h-full flex justify-end">
+        <img class="h-full w-3/4 object-fill rounded-tl-3xl" src="assets/travel.jpg" alt="person surfing">
+      </div>
+
+    </section>
+
+    <section id="gallery" class="p-24">
+      <h2 class="text-4xl font-bold mb-8">Photo Gallery</h2>
+      <div class="grid grid-cols-4 grid-rows-4 gap-4">
+        <img class="w-full h-full object-cover rounded-2xl col-span-2 row-span-4" src="assets/beach_3.0.jpg" alt="">
+        <div class="flex flex-col gap-4 col-span-1 row-span-4">
+          <img class="w-full h-1/2 object-cover rounded-2xl" src="assets/beach_2.0.jpg" alt="">
+          <img class="w-full h-1/2 object-cover rounded-2xl" src="assets/kashmir_2.0.jpg" alt="">
+        </div>
+        <div class="flex flex-col gap-4 col-span-1 row-span-4">
+          <img class="w-full h-3/4 object-cover rounded-2xl" src="assets/kashmir.jpg" alt="">
+          <img class="w-full h-1/4 object-cover rounded-2xl" src="assets/mosque.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-base-content p-24">
+    <aside>
+      <i class="w-16 h-16" data-lucide="shell"></i>
+      <p>
+        Trip pvt. Ltd.
+        <br />
+        Providing expert booking solutions since 2014.
+      </p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
+  <!-- Development version -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Production version -->
+  <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+</body>
+
+</html>
